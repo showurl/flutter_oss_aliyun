@@ -28,7 +28,7 @@ class Client {
       {String? stsUrl,
       required String ossEndpoint,
       required String bucketName,
-      String Function()? tokenGetter}) {
+      Function()? tokenGetter}) {
     assert(stsUrl != null || tokenGetter != null);
     final tokenGet = tokenGetter ??
         () async {
